@@ -1,0 +1,122 @@
+[
+  {
+    "playerImage": "https://i.ibb.co.com/67bw82jn/sakib.jpg",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "playerRating": 4.8,
+    "batingStyle": "Left-hand batsman",
+    "bowlingStyle": "Slow left-arm orthodox bowler",
+    "playerPrice": "9000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/snG4bnx/Mustafizur.jpg",
+    "playerName": "Mustafizur Rahman",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Bowler",
+    "playerRating": 4.5,
+    "batingStyle": "Left-hand batsman",
+    "bowlingStyle": "fast-medium left-arm bowler",
+    "playerPrice": "7500000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/1GrKjZqM/Liton.jpg",
+    "playerName": "Liton Das",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicket-keeper / Batsman",
+    "playerRating": 4.3,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Wicket-keeper",
+    "playerPrice": "6500000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/6J4JLvkT/Tamim.jpg",
+    "playerName": "Tamim Iqbal",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Batsman",
+    "playerRating": 4.6,
+    "batingStyle": "Left-hand batsman",
+    "bowlingStyle": "Fielder",
+    "playerPrice": "8000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/9H0jZ1q7/Mushfiqur.jpg",
+    "playerName": "Mushfiqur Rahim",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicket-keeper / Batsman",
+    "playerRating": 4.4,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Wicket-kepper",
+    "playerPrice": "7000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/r2WCwCdw/Mahmudullah.jpg",
+    "playerName": "Mahmudullah",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "playerRating": 4.2,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Right-arm medium-fast bowler",
+    "playerPrice": "6000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/HfCjPjsp/Soumya.jpg",
+    "playerName": "Soumya Sarkar",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Batsman",
+    "playerRating": 4.0,
+    "batingStyle": "Left-hand batsman",
+    "bowlingStyle": "Fielder",
+    "playerPrice": "5500000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/YFf6q1zq/Sohan.jpg",
+    "playerName": "Nurul Hasan Sohan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicket-keeper / Batsman",
+    "playerRating": 4.1,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Wicket-keeper",
+    "playerPrice": "5000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/5XBfFpB2/Afif.jpg",
+    "playerName": "Afif Hossain",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Batsman",
+    "playerRating": 3.9,
+    "batingStyle": "Left-hand batsman",
+    "bowlingStyle": "Fielder",
+    "playerPrice": "4500000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/Z6y4mXgG/Ziaur.jpg",
+    "playerName": "Ziaur Rahman",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "playerRating": 3.8,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Right-arm fast bowler",
+    "playerPrice": "4000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/JF53R75x/Taskin.jpg",
+    "playerName": "Taskin Ahmed",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Bowler",
+    "playerRating": 4.4,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Right-arm fast bowler",
+    "playerPrice": "7000000"
+  },
+  {
+    "playerImage": "https://i.ibb.co.com/PZvD52bH/Miraz.jpg",
+    "playerName": "Mehidy Hasan Miraz",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "playerRating": 4.7,
+    "batingStyle": "Right-hand batsman",
+    "bowlingStyle": "Right-arm off-break bowler",
+    "playerPrice": "8500000"
+  }
+]

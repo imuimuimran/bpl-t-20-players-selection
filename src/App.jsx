@@ -1,21 +1,27 @@
+import { Suspense } from 'react';
 import './App.css'
+import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
+import NavBar from './Components/NavBar/NavBar';
+import SelectedPlayers from './Components/SelectedPlayers/SelectedPlayers';
+
+const fetchPlayers = async() => {
+  const res = await fetch("/players-info.json")
+  return res.json()
+}
 
 function App() {
-
+  const playersPromise = fetchPlayers();
 
   return (
     <>
       
-      <div className="navbar bg-base-100 shadow-sm">
-        <div className="flex-1">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
-        </div>
-        <div className="flex-none">
-          <button className="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block h-5 w-5 stroke-current"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path> </svg>
-          </button>
-        </div>
-      </div>
+      <NavBar></NavBar>
+
+      <Suspense fallback = {<span className="loading loading-dots loading-xl"></span>}>
+        <AvailablePlayers playersPromise = {playersPromise}></AvailablePlayers>
+      </Suspense>
+
+      <SelectedPlayers></SelectedPlayers>
       
     </>
   )
