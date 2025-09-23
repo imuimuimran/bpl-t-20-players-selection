@@ -16,6 +16,13 @@ function App() {
   const [availableBalance, setAvailableBalance] = useState(35000000)
   const [purchasedPlayers, setPurchasedPlayers] = useState([])
 
+  const removPlayer = (rmvPlayer) => {
+    const filteredData = purchasedPlayers.filter(rmvply => rmvply.playerName !== rmvPlayer.playerName)
+
+    setPurchasedPlayers(filteredData)
+    setAvailableBalance(availableBalance + parseInt(rmvPlayer.playerPrice))
+  }
+
   return (
     <>
       
@@ -34,7 +41,7 @@ function App() {
       {
         toggle === true ? <Suspense fallback = {<span className="loading loading-dots loading-xl"></span>}>
         <AvailablePlayers purchasedPlayers = {purchasedPlayers} setPurchasedPlayers = {setPurchasedPlayers} playersPromise = {playersPromise} setAvailableBalance = {setAvailableBalance} availableBalance = {availableBalance}></AvailablePlayers>
-        </Suspense> : <SelectedPlayers purchasedPlayers = {purchasedPlayers}></SelectedPlayers>
+        </Suspense> : <SelectedPlayers removPlayer = {removPlayer} purchasedPlayers = {purchasedPlayers}></SelectedPlayers>
       }
       
     </>
