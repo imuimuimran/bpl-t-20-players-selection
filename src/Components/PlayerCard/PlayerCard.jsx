@@ -1,15 +1,30 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import imgIcon from '../../assets/img-icon.png'
 import flagIcon from '../../assets/flag-icon.png'
+import { toast } from 'react-toastify';
 
 const PlayerCard = ({player, setAvailableBalance, availableBalance, purchasedPlayers, setPurchasedPlayers}) => {
-    const [isSelected, setIsSelected] = useState(false)
+
+    // check if this player already selected
+    const isSelected = purchasedPlayers.some(
+        (p) => p.playerName === player.playerName
+    // const [isSelected, setIsSelected] = useState(false)
+    );
+    
     const handleSelected = (playerData) => {
         if(availableBalance < playerData.playerPrice){
-            alert("Not enough coin")
+            toast("Not enough coin")
             return
         }
-        setIsSelected(true) 
+        if(purchasedPlayers.length === 6) {
+            toast("Highest Player Buying Limit is 6.")
+            return
+        } 
+
+        // if already selected, do nothing
+        if (isSelected) return;
+        // setIsSelected(true) 
+
         setAvailableBalance(availableBalance - playerData.playerPrice);
 
         setPurchasedPlayers([...purchasedPlayers, playerData])

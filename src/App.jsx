@@ -3,6 +3,7 @@ import './App.css'
 import AvailablePlayers from './Components/AvailablePlayers/AvailablePlayers';
 import NavBar from './Components/NavBar/NavBar';
 import SelectedPlayers from './Components/SelectedPlayers/SelectedPlayers';
+import { ToastContainer } from 'react-toastify';
 
 const fetchPlayers = async() => {
   const res = await fetch("/players-info.json")
@@ -13,7 +14,7 @@ const playersPromise = fetchPlayers();
 
 function App() {
   const [toggle, setToggle] = useState(true)
-  const [availableBalance, setAvailableBalance] = useState(35000000)
+  const [availableBalance, setAvailableBalance] = useState(70000000)
   const [purchasedPlayers, setPurchasedPlayers] = useState([])
 
   const removPlayer = (rmvPlayer) => {
@@ -41,9 +42,11 @@ function App() {
       {
         toggle === true ? <Suspense fallback = {<span className="loading loading-dots loading-xl"></span>}>
         <AvailablePlayers purchasedPlayers = {purchasedPlayers} setPurchasedPlayers = {setPurchasedPlayers} playersPromise = {playersPromise} setAvailableBalance = {setAvailableBalance} availableBalance = {availableBalance}></AvailablePlayers>
-        </Suspense> : <SelectedPlayers removPlayer = {removPlayer} purchasedPlayers = {purchasedPlayers}></SelectedPlayers>
+        </Suspense> : <SelectedPlayers removPlayer = {removPlayer} purchasedPlayers = {purchasedPlayers} setToggle={setToggle}></SelectedPlayers>
       }
       
+
+      <ToastContainer />
     </>
   )
 }
